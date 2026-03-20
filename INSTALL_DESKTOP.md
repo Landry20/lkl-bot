@@ -25,7 +25,8 @@ Tauri est construit en Rust. C'est lui qui crée l'exécutable (`.exe`) et l'ins
    npm -v
    ```
 
-## 3. Préparer le projet
+3. **Préparer le projet (Réinstallation des dépendances)**
+
 Une fois les outils installés, ouvrez un terminal dans le dossier du projet :
 
 1. **Installer les dépendances Frontend** :
@@ -34,7 +35,15 @@ Une fois les outils installés, ouvrez un terminal dans le dossier du projet :
    npm install
    ```
 
-2. **Générer le moteur Python (Moi, Antigravity, j'ai déjà fait cette étape pour vous)** :
+2. **Configurer le moteur Python** :
+   ```bash
+   # À la racine du projet
+   python -m venv .venv
+   .venv\Scripts\activate
+   pip install MetaTrader5 schedule requests pymysql TA-Lib pandas matplotlib
+   ```
+
+3. **Générer le moteur Python (Moi, Antigravity, j'ai déjà fait cette étape pour vous)** :
    ```bash
    # (Optionnel si vous changez le code Python)
    python scripts/build_python.py

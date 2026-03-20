@@ -30,8 +30,27 @@ Pour installer le projet sur votre PC de développement :
 
 2.  **Configuration** :
     - Clonez le dépôt : `git clone https://github.com/Landry20/lkl-bot.git`
-    - Installez les dépendances web : `cd lkl_web && npm install`
-    - Configurez le backend Laravel : `cd lkl_backend && composer install && cp .env.example .env && php artisan key:generate`
+    - **Interface (Web/Desktop)** : 
+        ```bash
+        cd lkl_web
+        npm install
+        ```
+    - **Backend (Laravel)** : 
+        ```bash
+        cd lkl_backend
+        composer install
+        cp .env.example .env
+        php artisan key:generate
+        ```
+    - **AI Engine (Python)** :
+        ```bash
+        # Créer l'environnement virtuel à la racine
+        python -m venv .venv
+        # Activer l'environnement (Windows)
+        .venv\Scripts\activate
+        # Installer les dépendances
+        pip install MetaTrader5 schedule requests pymysql TA-Lib pandas matplotlib
+        ```
 
 3.  **Lancement** :
     - Lancez le backend : `php artisan serve`
