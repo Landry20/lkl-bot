@@ -1,0 +1,17 @@
+[package]
+name = "lkl-trading-ai"
+version = "1.0.0"
+description = "LKL Trading AI Application"
+authors = ["LKL Team"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.6", features = [ "shell-execute", "dialog-all", "fs-all", "shell-sidecar"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.31", features = ["bundled"] } # SQLite Bundled
+tokio = { version = "1", features = ["full"] } # Async runtime for TCP/IPC
+anyhow = "1.0"

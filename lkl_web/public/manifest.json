@@ -1,0 +1,23 @@
+{
+    "id": "/",
+    "short_name": "LKL Bot",
+    "name": "LKL Trading Bot Manager",
+    "description": "LKL Strategy Hub - Premium Trading Bot Manager",
+    "icons": [
+        {
+            "src": "/lkl_logo_white.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/lkl_logo_white.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#0a0e17",
+    "background_color": "#0a0e17"
+}

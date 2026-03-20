@@ -1,0 +1,45 @@
+# Common excludes
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+
+# Node/Frontend
+node_modules/
+dist/
+dist-ssr/
+build/
+.npm/
+
+# Laravel
+lkl_backend/vendor/
+lkl_backend/.env
+lkl_backend/storage/*.key
+lkl_backend/storage/framework/cache/data/*
+lkl_backend/storage/framework/sessions/*
+lkl_backend/storage/framework/testing/*
+lkl_backend/storage/framework/views/*
+lkl_backend/bootstrap/cache/*
+
+# Tauri
+lkl_web/src-tauri/target/
+
+# Local Data
+data/*.db
+data/*.sqlite
+data/logs/
+
+# Legacy folder
+LKL_bot/venv/
+LKL_bot/lkl_web/node_modules/
+LKL_bot/lkl_web/dist/
